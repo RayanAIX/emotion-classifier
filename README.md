@@ -11,7 +11,7 @@ This project uses a Convolutional Neural Network (CNN) to classify human facial 
 ### ▶️ Emotion Detection Results
 Here are some examples of predictions made by the trained model:
 
-<img src="screenshots/prediction_1.png" width="300" /> <img src="screenshots/prediction_2.png" width="300" />
+<img src="prediction_1.png" width="300" /> <img src="prediction_2.png" width="300" />
 
 > ✅ Add your own screenshots in the `screenshots/` folder for better visuals!
 
