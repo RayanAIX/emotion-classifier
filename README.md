@@ -1,5 +1,3 @@
-# emotion-classifier
-Deep Learning project to detect facial emotions using CNN
 # 😄 Emotion Classifier using Deep Learning
 
 This project uses a Convolutional Neural Network (CNN) to classify human facial emotions based on the FER2013 dataset. It detects emotions like Happy, Sad, Angry, Surprise, and more — directly from grayscale face images.
