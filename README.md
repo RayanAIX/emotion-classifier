@@ -11,7 +11,7 @@ Here are some examples of predictions made by the trained model:
 
 <img src="prediction_1.png" width="300" /> <img src="prediction_2.png" width="300" />
 
-> ✅ Add your own screenshots in the `screenshots/` folder for better visuals!
+
 
 ---
 
