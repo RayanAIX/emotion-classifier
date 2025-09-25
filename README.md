@@ -1,82 +1,110 @@
-# 😄 Emotion Classifier using Deep Learning
+# 🎭 Emotion Classifier
 
-This project uses a Convolutional Neural Network (CNN) to classify human facial emotions based on the FER2013 dataset. It detects emotions like Happy, Sad, Angry, Surprise, and more — directly from grayscale face images.
-
----
-
-## 📷 Sample Output
-
-### ▶️ Emotion Detection Results
-Here are some examples of predictions made by the trained model:
-
-<img src="prediction_1.png" width="300" /> <img src="prediction_2.png" width="300" />
-
-
+A deep learning–based Emotion Classifier that predicts human emotions from facial expressions.  
+Built using **TensorFlow/Keras**, trained on a labeled dataset, and deployed as a **live interactive demo on Hugging Face Spaces**.
 
 ---
 
-## 📁 Dataset
-
-- **Source:** [FER2013 (Facial Expression Recognition)](https://www.kaggle.com/datasets/msambare/fer2013)
-- 48x48 grayscale images of faces
-- Emotions:
-  - Angry
-  - Disgust
-  - Fear
-  - Happy
-  - Sad
-  - Surprise
-  - Neutral
+## 🚀 Live Demo
+Try it out here:  
+👉 [Emotion Classifier on Hugging Face Spaces](https://huggingface.co/spaces/RayNetic/Emotion-Classifier)
 
 ---
 
-## 🧠 Model Architecture
+## 📂 Project Structure
+emotion-classifier/
+│
+├── model/
+│ └── emotion_model.h5 # Trained CNN model
+│
+├── notebook/
+│ └── Emotion_Classifier.ipynb # Jupyter/Colab notebook for training & testing
+│
+├── hf_app/
+│ ├── app.py # Streamlit app for Hugging Face Spaces
+│ ├── requirements.txt # Dependencies for Hugging Face
+│ └── README.md # (Optional) Notes for HF app
+│
+├── screenshots/ # Results & interface screenshots
+│
+├── README.md # Main project README (this file)
 
-- Input: 48x48 grayscale image
-- Layers:
-  - Conv2D → ReLU → MaxPooling
-  - Dropout for regularization
-  - Dense → Softmax (multi-class classification)
-- **Optimizer:** Adam  
-- **Loss Function:** Categorical Crossentropy
-
----
-
-## 📊 Training Results
-
-| Metric     | Value          |
-|------------|----------------|
-| Accuracy   | XX% (fill yours) |
-| Loss       | XX             |
-| Epochs     | 30             |
-| Batch Size | 64             |
-
----
-
-## 📂 Files
-
-| File                          | Description                                      |
-|-------------------------------|--------------------------------------------------|
-| `Emotion_Classifier.ipynb`    | Complete training notebook (Google Colab)        |
-| `emotion_classifier_model.h5` | Trained Keras model                              |
-| `screenshots/`                | Folder for output screenshots                    |
-| `README.md`                   | Project overview and documentation               |
+yaml
+Copy code
 
 ---
 
-## 🚀 Future Plans
-
-- Deploy using **Streamlit**
-- Integrate with **OpenCV** for real-time webcam emotion detection
-- Improve accuracy with **data augmentation** and **ResNet**
+## 🧠 Model Details
+- **Model Type**: Convolutional Neural Network (CNN)  
+- **Framework**: TensorFlow / Keras  
+- **Input**: Face images (grayscale, resized to 48x48)  
+- **Output Classes**:  
+  - 😄 Happy  
+  - 😢 Sad  
+  - 😠 Angry  
+  - 😲 Surprise  
+  - 😐 Neutral  
+  - 😨 Fear  
+  - 🤢 Disgust  
 
 ---
 
-## 🧑‍💻 Author
+## 🖼️ Screenshots
 
-**Muhammad Rayan Shahid**  
-Passionate AI & ML Developer | [LinkedIn](https://www.linkedin.com/in/muhammadrayanshahid/) | [GitHub](https://github.com/RayanAIX)
+| Training Graph | Prediction Demo |
+|----------------|-----------------|
+| ![Training Graph](screenshots/training.png) | ![Prediction](screenshots/prediction.png) |
+
+| Hugging Face App |
+|------------------|
+| ![HF App](screenshots/hf_app.png) |
 
 ---
 
-⭐ If you found this project helpful, consider starring the repo!
+## ⚙️ Installation & Usage (Local)
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/RayanAIX/emotion-classifier.git
+   cd emotion-classifier
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the Streamlit app locally:
+
+bash
+Copy code
+streamlit run hf_app/app.py
+Upload an image or use webcam to test the model.
+
+🌐 Deployment
+Hosted on Hugging Face Spaces using Streamlit.
+
+Live Demo Link
+
+📊 Results
+Achieved XX% accuracy on test set.
+
+Robust in real-time emotion detection via webcam.
+
+🧑‍💻 Author
+Muhammad Rayan Shahid
+
+🔗 LinkedIn
+
+🔗 GitHub
+
+🎥 YouTube: ByteBrilliance AI
+
+⭐ If you like this project, don’t forget to give it a star on GitHub!
+
+yaml
+Copy code
+
+---
+
+This version is **polished, professional, and showcases Hugging Face integration**.  
+
+👉 Do you also want me to prepare a **separate short README just for the `hf_app/` 
