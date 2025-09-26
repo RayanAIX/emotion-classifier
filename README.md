@@ -1,110 +1,95 @@
 # 🎭 Emotion Classifier
 
-A deep learning–based Emotion Classifier that predicts human emotions from facial expressions.  
-Built using **TensorFlow/Keras**, trained on a labeled dataset, and deployed as a **live interactive demo on Hugging Face Spaces**.
+An AI-powered emotion recognition system that classifies human emotions from images using deep learning (CNN).  
+This project was trained on a facial expression dataset and deployed both locally and on **Hugging Face Spaces**.
 
 ---
 
 ## 🚀 Live Demo
-Try it out here:  
-👉 [Emotion Classifier on Hugging Face Spaces](https://huggingface.co/spaces/RayNetic/Emotion-Classifier)
+🔗 Hugging Face Spaces: https://huggingface.co/spaces/RayNetic/Emotion-Classifier
 
 ---
 
 ## 📂 Project Structure
+
 emotion-classifier/
 │
 ├── model/
 │ └── emotion_model.h5 # Trained CNN model
 │
 ├── notebook/
-│ └── Emotion_Classifier.ipynb # Jupyter/Colab notebook for training & testing
+│ └── Emotion_Classifier.ipynb # Jupyter/Colab notebook (training & evaluation)
 │
 ├── hf_app/
-│ ├── app.py # Streamlit app for Hugging Face Spaces
+│ ├── app.py # Hugging Face Streamlit app
 │ ├── requirements.txt # Dependencies for Hugging Face
-│ └── README.md # (Optional) Notes for HF app
+│ └── README.md # (Optional) app-specific readme
 │
-├── screenshots/ # Results & interface screenshots
+├── screenshots/ # Result screenshots
 │
-├── README.md # Main project README (this file)
-
-yaml
-Copy code
-
+├── README.md # Main project readme
 ---
 
 ## 🧠 Model Details
-- **Model Type**: Convolutional Neural Network (CNN)  
-- **Framework**: TensorFlow / Keras  
-- **Input**: Face images (grayscale, resized to 48x48)  
-- **Output Classes**:  
-  - 😄 Happy  
-  - 😢 Sad  
-  - 😠 Angry  
-  - 😲 Surprise  
-  - 😐 Neutral  
-  - 😨 Fear  
-  - 🤢 Disgust  
+- **Architecture:** Convolutional Neural Network (CNN)  
+- **Frameworks:** TensorFlow / Keras  
+- **Input:** Facial images  
+- **Output:** One of several emotion categories (e.g., Happy, Sad, Angry, Surprise, Neutral)  
 
 ---
 
-## 🖼️ Screenshots
+## 📊 Results
 
-| Training Graph | Prediction Demo |
-|----------------|-----------------|
-| ![Training Graph](screenshots/training.png) | ![Prediction](screenshots/prediction.png) |
+| Emotion | Example Prediction      |
+|---------|-------------------------|
+| Happy   | 😄 Detected correctly   |
+| Sad     | 😢 Detected correctly   |
+| Angry   | 😡 Detected correctly   |
+| Neutral | 😐 Detected correctly   |
 
-| Hugging Face App |
-|------------------|
-| ![HF App](screenshots/hf_app.png) |
+📷 **Screenshots:**  
+
+![Training Accuracy](screenshots/training_accuracy.png)  
+![Confusion Matrix](screenshots/confusion_matrix.png)  
+![Sample Prediction](screenshots/sample_prediction.png)
 
 ---
 
-## ⚙️ Installation & Usage (Local)
+## 🛠️ Installation (Local)
 
-1. Clone this repository:
+1. Clone the repo:
    ```bash
    git clone https://github.com/RayanAIX/emotion-classifier.git
    cd emotion-classifier
 Install dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
-Run the Streamlit app locally:
 
-bash
-Copy code
+
+Run the app locally:
+
 streamlit run hf_app/app.py
-Upload an image or use webcam to test the model.
 
 🌐 Deployment
-Hosted on Hugging Face Spaces using Streamlit.
 
-Live Demo Link
+GitHub Repo: https://github.com/RayanAIX/emotion-classifier
 
-📊 Results
-Achieved XX% accuracy on test set.
+Hugging Face Spaces: https://huggingface.co/spaces/RayNetic/Emotion-Classifier
 
-Robust in real-time emotion detection via webcam.
+👤 Author
 
-🧑‍💻 Author
 Muhammad Rayan Shahid
 
-🔗 LinkedIn
+YouTube: https://www.youtube.com/@ByteBrillianceAI
 
-🔗 GitHub
+LinkedIn: https://www.linkedin.com/in/muhammad-rayan-shahid
 
-🎥 YouTube: ByteBrilliance AI
+Kaggle: https://www.kaggle.com/rayanaix
 
-⭐ If you like this project, don’t forget to give it a star on GitHub!
+GitHub: https://github.com/RayanAIX
 
-yaml
-Copy code
+Hugging Face: https://huggingface.co/RayNetic
 
----
+Twitter/X: https://twitter.com/RayanAIX
 
-This version is **polished, professional, and showcases Hugging Face integration**.  
-
-👉 Do you also want me to prepare a **separate short README just for the `hf_app/` 
+⭐ If you like this project, don’t forget to star the repo and share!
